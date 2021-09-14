@@ -1,0 +1,184 @@
+/* general styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', Helvetica, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+    a:hover {
+        color: black;
+    }
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+/*rewrite bootstrap styles*/
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(6, 215, 160, 0.5);
+}
+
+::placeholder {
+  color: var(--light_gray) !important;
+}
+
+.success {
+    color: var(--main_color);
+}
+
+/*color variables*/
+
+:root {
+  --main_color: #06d7a0;
+  --gray: #4c4859; 
+  --light_gray: #a9a9a9;
+}
+
+/*styles*/
+
+.logo {
+    width: 16rem;
+    height: auto;
+}
+
+.cart_img {
+    width: 32px;
+    height: 23px;
+}
+
+.profile_img {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.my_text {
+    color: var(--gray) !important;
+}
+
+    .my_text:hover {
+        color: var(--main_color) !important;
+    }
+
+.my_text_maincolor {
+     color: var(--main_color) !important;
+}
+
+    .my_text_maincolor:hover {
+        opacity: 0.9;
+    }
+
+.my_text_lightgray {
+    color: var(--light_gray) !important;
+}
+
+.bg_maincolor {
+    background-color: var(--main_color);
+}
+
+.bg_gray {
+    background-color: var(--gray);
+}
+
+.bg_lightgray {
+    background-color: var(--light_gray) !important;
+}
+
+    .bg_hover:hover {
+        background-color: var(--main_color) !important;
+    }
+
+    .bg_hover:hover>a {
+        color: white !important;
+    }
+
+.banner_text {
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+    line-height: 1.1;
+}
+
+.fs_6 {
+    font-size: 1.5rem;
+}
+
+.fs_7 {
+    font-size: 0.9rem;
+}
+
+.row_width {
+    max-width: 100%;
+    margin: 0;
+}
+
+/*
+.box_height {
+    height: 100%;
+}
+*/
+
+.square {
+  position: relative;
+  overflow: hidden;
+}
+
+    .square:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    .square img {
+        transition: transform 5s;
+        transition-timing-function: ease-out;
+    }
+
+        .square img:hover {
+            transform: scale(1.2);
+        }
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img-thumbnail {
+    width: 10rem;
+    height: 10rem;
+}
+
+.big-thumbnail {
+    width: 15rem;
+    height: 15rem;
+}
+
+.cart-number {
+    width: 25px; 
+    height: 25px; 
+    padding-top: 2px;
+    top: -4px;
+    right: -5px;
+}
+
+/*media*/
+@media (max-width: 575.98px) { 
+    .banner_text {
+        font-size: 3rem;
+    }
+}
